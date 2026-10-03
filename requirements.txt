@@ -1,0 +1,2 @@
+#we gebruiken de pygame communitie edition
+pygame-ce
