@@ -35,6 +35,6 @@ https://www.markdownguide.org/cheat-sheet/
 ### Py game instructies
 https://www.pygame.org/docs/
 
-pygame word niet meer ondersteind dus we gruibruiken de pygame communitie edition
-
+pygame word niet meer ondersteund dus we gebruiken de pygame communitie edition
+https://pyga.me/
 https://github.com/pygame-community/pygame-ce
