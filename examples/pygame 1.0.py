@@ -3,7 +3,7 @@ import pygame
 
 # pygame setup
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((640, 360))
 clock = pygame.time.Clock()
 running = True
 dt = 0
@@ -20,17 +20,17 @@ while running:
     # fill the screen with a color to wipe away anything from last frame
     screen.fill("purple")
 
-    pygame.draw.circle(screen, "red", player_pos, 40)
+    pygame.draw.circle(screen, "blue", player_pos, 20)
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
-        player_pos.y -= 300 * dt
+        player_pos.y -= 150 * dt
     if keys[pygame.K_s]:
-        player_pos.y += 300 * dt
+        player_pos.y += 150 * dt
     if keys[pygame.K_a]:
-        player_pos.x -= 300 * dt
+        player_pos.x -= 150 * dt
     if keys[pygame.K_d]:
-        player_pos.x += 300 * dt
+        player_pos.x += 150 * dt
 
     # flip() the display to put your work on screen
     pygame.display.flip()
@@ -38,6 +38,6 @@ while running:
     # limits FPS to 60
     # dt is delta time in seconds since last frame, used for framerate-
     # independent physics.
-    dt = clock.tick(60) / 1000
+dt = clock.tick(60) / 1000
 
 pygame.quit()
