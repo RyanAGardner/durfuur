@@ -30,8 +30,9 @@ else:
 
 
 
-password = 'python123'
+password = 'python13'
 if password == "python123":
     print("Access granted!")
 else:
     print("Wrong password!")
+    print("installing virus")
